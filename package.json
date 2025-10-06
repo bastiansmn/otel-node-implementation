@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "otel-node-implementation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastiansmn/otel-node-implementation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastiansmn/otel-node-implementation/issues"
+  },
+  "homepage": "https://github.com/bastiansmn/otel-node-implementation#readme",
+  "devDependencies": {
+    "tsx": "^4.20.6"
+  }
+}
