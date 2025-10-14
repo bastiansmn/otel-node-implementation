@@ -1,15 +1,22 @@
 {
   "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.65.0",
+    "@opentelemetry/winston-transport": "^0.17.0",
+    "@types/express": "^5.0.3",
     "express": "^5.1.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "winston": "^3.18.3"
   },
   "name": "otel-node-implementation",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "build": "tsc",
+    "start": "npx tsx app.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +29,7 @@
   },
   "homepage": "https://github.com/bastiansmn/otel-node-implementation#readme",
   "devDependencies": {
-    "tsx": "^4.20.6"
+    "tsx": "^4.20.6",
+    "typescript": "^5.2.0"
   }
 }

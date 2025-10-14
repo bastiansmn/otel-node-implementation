@@ -2,8 +2,20 @@ version: "3.8"
 services:
   web:
     build: .
+    environment:
+      - OTEL_LOG_LEVEL=info
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=otlp
+      - OTEL_LOGS_EXPORTER=none
+
+      - LOG_LEVEL=debug
+
+      - OTEL_SERVICE_NAME=demo-app-node-otlp
+
+      - PORT=8081
     ports:
-      - "3000:3000"
+      - "8081:8081"
     networks:
       - observability
 
